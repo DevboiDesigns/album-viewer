@@ -1,17 +1,23 @@
 # Album Viewer Web Component
 
-![TEST](https://img.shields.io/badge/v0.0.2-BETA-8A2BE2)
+The `album-viewer` web component fetches and displays albums from a specified Bandcamp URL
+
+![BETA](https://img.shields.io/badge/v0.0.3-BETA-8A2BE2)
+
+---
 
 ## Overview
 
-The `album-viewer` web component fetches and displays albums from a specified Bandcamp URL. When you pass a URL to the component in the format `https://onhell.bandcamp.com/music`, it will display all the musician's albums in a horizontal scrolling view.
+- `artistName`: musician to get albums for
+
+The `album-viewer` web component fetches and displays albums from a specified Bandcamp URL. When you pass a URL to the component in the format `https://artistName.bandcamp.com/music`, it will display all the musician's albums in a horizontal scrolling view.
 
 ## Installation
 
 Include the `album-viewer` component in your HTML file:
 
 ```html
-<script type="module" src="./src/album-viewer.js"></script>
+<script type="module" src="https://cdn.skypack.dev/album-viewer"></script>
 ```
 
 ## Usage
@@ -29,7 +35,7 @@ Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a pro
   <body>
     <album-viewer url="https://onhell.bandcamp.com/music"></album-viewer>
 
-    <script type="module" src="./src/album-viewer.js"></script>
+    <script type="module" src="https://cdn.skypack.dev/album-viewer"></script>
   </body>
 </html>
 ```
@@ -41,7 +47,7 @@ Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a pro
 **Example with URL**
 
 ```html
-<album-viewer url="https://onhell.bandcamp.com/music"></album-viewer>
+<album-viewer url="https://omboi.bandcamp.com/music"></album-viewer>
 ```
 
 ## Styling
