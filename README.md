@@ -1,6 +1,6 @@
 # Album Viewer Web Component
 
-![TEST](https://img.shields.io/badge/v0.0.1-BETA-8A2BE2)
+![TEST](https://img.shields.io/badge/v0.0.2-BETA-8A2BE2)
 
 ## Overview
 
