@@ -7,8 +7,8 @@ import { customElement, property } from "lit/decorators.js"
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement("my-element")
-export class MyElement extends LitElement {
+@customElement("album-viewer")
+export class AlbumViewer extends LitElement {
   /**
    *
    * @property url - The URL to fetch the album from
@@ -20,12 +20,13 @@ export class MyElement extends LitElement {
   }
 
   async fetchAlbumData() {
-    const IS_LOCAL = false
-    const URL = IS_LOCAL
+    const IS_LOCAL = true
+    const BASE_URL = IS_LOCAL
       ? "http://localhost:3000/albums"
       : "https://devboi-music-api-3aba476986fd.herokuapp.com/albums"
+    const requestUrl = `${BASE_URL}?url=${encodeURIComponent(this.url)}`
     try {
-      const response = await fetch(URL, {
+      const response = await fetch(requestUrl, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -70,4 +71,10 @@ export class MyElement extends LitElement {
       overflow-x: auto;
     }
   `
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "album-viewer": AlbumViewer
+  }
 }
