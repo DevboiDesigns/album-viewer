@@ -8,7 +8,7 @@
     "types"
   ],
   "main": "./dist/album-viewer.umd.cjs",
-  "module": "./dist/devboi-test-component.js",
+  "module": "./dist/album-viewer.js",
   "exports": {
     ".": {
       "import": "./dist/album-viewer.js",
