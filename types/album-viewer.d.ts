@@ -10,7 +10,7 @@ export declare class AlbumViewer extends LitElement {
      *
      * @property url - The URL to fetch the album from
      */
-    url: string;
+    name: string;
     firstUpdated(): void;
     fetchAlbumData(): Promise<void>;
     displayAlbums(albums: any[]): void;
