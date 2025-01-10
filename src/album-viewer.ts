@@ -20,7 +20,7 @@ export class AlbumViewer extends LitElement {
   }
 
   async fetchAlbumData() {
-    const IS_LOCAL = true
+    const IS_LOCAL = false
     const BASE_URL = IS_LOCAL
       ? "http://localhost:3000/albums"
       : "https://devboi-music-api-3aba476986fd.herokuapp.com/albums"
