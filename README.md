@@ -71,7 +71,7 @@ This is a beta version of the `album-viewer` web component. We are actively work
 
 We welcome your feedback and suggestions to help us improve this component. Stay tuned for updates!
 
-![example gif of album viewer](docs/media/album-viewer.gif)
+<!-- ![example gif of album viewer](docs/media/album-viewer.gif) -->
 
 ## Star on GitHub 🤩
 
