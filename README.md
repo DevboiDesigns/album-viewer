@@ -1,6 +1,6 @@
 # Album Viewer Web Component
 
-The `album-viewer` web component fetches and displays albums from a specified Bandcamp URL
+The `album-viewer` web component fetches and displays albums from a specified Bandcamp artist
 
 ![BETA](https://img.shields.io/badge/v0.0.6-BETA-8A2BE2)
 
