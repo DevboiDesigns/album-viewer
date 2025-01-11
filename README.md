@@ -20,7 +20,7 @@ Include the `album-viewer` component in your HTML file:
 
 ## Usage
 
-Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a property:
+Add the `album-viewer` component to your HTML and pass the Bandcamp artist name as a property:
 
 ```html
 <!DOCTYPE html>
@@ -68,3 +68,5 @@ This is a beta version of the `album-viewer` web component. We are actively work
 - **Accessibility Improvements**: Enhancements to make the component more accessible to users with disabilities.
 
 We welcome your feedback and suggestions to help us improve this component. Stay tuned for updates!
+
+![example gif of album viewer](docs/media/album-viewer.gif)
