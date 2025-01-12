@@ -13,18 +13,18 @@ export class AlbumViewer extends LitElement {
    *
    * @property url - The URL to fetch the album from
    */
-  @property({ type: String }) url = ""
+  @property({ type: String }) name = ""
 
   firstUpdated() {
     this.fetchAlbumData()
   }
 
   async fetchAlbumData() {
-    const IS_LOCAL = true
+    const IS_LOCAL = false //* Set to true if running locally
     const BASE_URL = IS_LOCAL
       ? "http://localhost:3000/albums"
       : "https://devboi-music-api-3aba476986fd.herokuapp.com/albums"
-    const requestUrl = `${BASE_URL}?url=${encodeURIComponent(this.url)}`
+    const requestUrl = `${BASE_URL}?name=${this.name}`
     try {
       const response = await fetch(requestUrl, {
         method: "GET",

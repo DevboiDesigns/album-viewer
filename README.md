@@ -1,16 +1,14 @@
 # Album Viewer Web Component
 
-The `album-viewer` web component fetches and displays albums from a specified Bandcamp URL
+The `album-viewer` web component fetches and displays albums from a specified Bandcamp artist
 
-![BETA](https://img.shields.io/badge/v0.0.3-BETA-8A2BE2)
+![BETA](https://img.shields.io/badge/v0.0.6-BETA-8A2BE2)
 
 ---
 
 ## Overview
 
-- `artistName`: musician to get albums for
-
-The `album-viewer` web component fetches and displays albums from a specified Bandcamp URL. When you pass a URL to the component in the format `https://artistName.bandcamp.com/music`, it will display all the musician's albums in a horizontal scrolling view.
+The `album-viewer` web component fetches and displays albums from a specified Bandcamp artist. When you pass an artist name to the component, it will display all the musician's albums in a horizontal scrolling view.
 
 ## Installation
 
@@ -33,7 +31,7 @@ Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a pro
     <title>Album Viewer</title>
   </head>
   <body>
-    <album-viewer url="https://onhell.bandcamp.com/music"></album-viewer>
+    <album-viewer name="artistName"></album-viewer>
 
     <script type="module" src="https://cdn.skypack.dev/album-viewer"></script>
   </body>
@@ -42,12 +40,12 @@ Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a pro
 
 ## Properties
 
-- `url`: The Bandcamp URL to fetch the albums from. This should be in the format `https://onhell.bandcamp.com/music`.
+- `artistName`: artist to fetch albums for
 
-**Example with URL**
+**Example with Name**
 
 ```html
-<album-viewer url="https://omboi.bandcamp.com/music"></album-viewer>
+<album-viewer name="artistName"></album-viewer>
 ```
 
 ## Styling
@@ -56,7 +54,7 @@ The component includes default styles for the horizontal scrolling view. You can
 
 ## Conclusion
 
-The `album-viewer` web component is a simple and effective way to display albums from a Bandcamp URL in a horizontal scrolling view. By passing the URL as a property, you can easily integrate this component into your web projects.
+The `album-viewer` web component is a simple and effective way to display albums from a Bandcamp artist in a horizontal scrolling view. By passing the artist name as a property, you can easily integrate this component into your web projects.
 
 ## Beta Version
 
