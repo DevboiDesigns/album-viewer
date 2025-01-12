@@ -1,8 +1,8 @@
 # Album Viewer Web Component
 
-The `album-viewer` web component fetches and displays albums from a specified Bandcamp artist
+The `album-viewer` web component fetches and displays albums from a specified [Bandcamp](https://bandcamp.com) artist
 
-![BETA](https://img.shields.io/badge/v0.0.6-BETA-8A2BE2)
+![BETA](https://img.shields.io/badge/v0.1.9-BETA-8A2BE2)
 
 ---
 
@@ -67,4 +67,15 @@ This is a beta version of the `album-viewer` web component. We are actively work
 - **Error Handling**: Improved error handling and user-friendly error messages.
 - **Accessibility Improvements**: Enhancements to make the component more accessible to users with disabilities.
 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/devboidesigns/album-viewer)
+
 We welcome your feedback and suggestions to help us improve this component. Stay tuned for updates!
+
+![example gif of album viewer](docs/media/album-viewer.gif)
+
+## Star on GitHub 🤩
+
+If you like this web component please take a moment to
+[star this project on GitHub](https://github.com/devboidesigns/album-viewer#start-of-content).
+
+[![GitHub stars](https://img.shields.io/github/stars/devboidesigns/album-viewer?style=social)](https://github.com/devboidesigns/album-viewer#start-of-content)
