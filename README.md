@@ -20,7 +20,7 @@ Include the `album-viewer` component in your HTML file:
 
 ## Usage
 
-Add the `album-viewer` component to your HTML and pass the Bandcamp artist name as a property:
+Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a property:
 
 ```html
 <!DOCTYPE html>
