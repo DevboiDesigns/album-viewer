@@ -10,6 +10,8 @@ The `album-viewer` web component fetches and displays albums from a specified [B
 
 The `album-viewer` web component fetches and displays albums from a specified Bandcamp artist. When you pass an artist name to the component, it will display all the musician's albums in a horizontal scrolling view.
 
+- [Demo Website](https://devboidesigns.github.io/album-viewer/)
+
 ## Installation
 
 Include the `album-viewer` component in your HTML file:
