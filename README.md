@@ -2,7 +2,7 @@
 
 The `album-viewer` web component fetches and displays albums from a specified [Bandcamp](https://bandcamp.com) artist
 
-![BETA](https://img.shields.io/badge/v0.1.9-BETA-8A2BE2)
+![version](https://img.shields.io/badge/v1.0.0-RELEASE-8A2BE2)
 
 ---
 
@@ -93,7 +93,7 @@ album-viewer .album-viewer {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Album Viewer</title>
     <style>
-      album-viewer .album-viewer {
+      album-viewer {
         background-color: #f0f0f0;
         padding: 10px;
       }
