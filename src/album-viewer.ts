@@ -1,30 +1,24 @@
 import { LitElement, css, html } from "lit"
 import { customElement, property } from "lit/decorators.js"
+import { BASE_URL } from "./utils/base.url"
+import { BANDCAMP_URL } from "./utils/bandcamp.url"
 
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
 @customElement("album-viewer")
 export class AlbumViewer extends LitElement {
   /**
-   *
-   * @property url - The URL to fetch the album from
+   * @property url - The name of the artist to fetch the albums for
    */
   @property({ type: String }) name = ""
+  @property({ type: String }) iframeWidth = "350px"
+  @property({ type: String }) iframeHeight = "442px"
+  @property({ type: String }) iframeBorder = "0"
 
   firstUpdated() {
     this.fetchAlbumData()
   }
 
   async fetchAlbumData() {
-    const IS_LOCAL = false //* Set to true if running locally
-    const BASE_URL = IS_LOCAL
-      ? "http://localhost:3000/albums"
-      : "https://devboi-music-api-3aba476986fd.herokuapp.com/albums"
-    const requestUrl = `${BASE_URL}?name=${this.name}`
+    const requestUrl = `${BASE_URL()}?name=${this.name}`
     try {
       const response = await fetch(requestUrl, {
         method: "GET",
@@ -47,10 +41,10 @@ export class AlbumViewer extends LitElement {
     albums.forEach((album) => {
       const type = album.type
       const iframe = document.createElement("iframe")
-      iframe.style.border = "0"
-      iframe.style.width = "350px"
-      iframe.style.height = "442px"
-      iframe.src = `https://bandcamp.com/EmbeddedPlayer/${type}=${album.id}/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/`
+      iframe.style.border = this.iframeBorder
+      iframe.style.width = this.iframeWidth
+      iframe.style.height = this.iframeHeight
+      iframe.src = BANDCAMP_URL(type, album.id)
       // iframe.seamless = true
       container?.appendChild(iframe)
     })
@@ -58,9 +52,9 @@ export class AlbumViewer extends LitElement {
 
   render() {
     return html`
-      <div class="album-viewer">
+      <pre class="album-viewer">
         <!-- Album Data will be injected here -->
-      </div>
+      </pre>
     `
   }
 
