@@ -12,8 +12,7 @@ import { BANDCAMP_URL } from "./utils/bandcamp.url"
 @customElement("album-viewer")
 export class AlbumViewer extends LitElement {
   /**
-   *
-   * @property url - The URL to fetch the album from
+   * @property url - The name of the artist to fetch the albums for
    */
   @property({ type: String }) name = ""
 
