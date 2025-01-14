@@ -2,7 +2,7 @@
 
 The `album-viewer` web component fetches and displays albums from a specified [Bandcamp](https://bandcamp.com) artist
 
-![version](https://img.shields.io/badge/v1.0.0-RELEASE-8A2BE2)
+![version](https://img.shields.io/badge/v1.0.1-RELEASE-8A2BE2)
 
 ---
 
@@ -19,6 +19,21 @@ Include the `album-viewer` component in your HTML file:
 ```html
 <script type="module" src="https://cdn.skypack.dev/album-viewer"></script>
 ```
+
+## Specifying Versions
+
+You can specify the version of the `album-viewer` component using the `@v^1.0.0` format. This allows you to control which version of the component you are using in your project. No version will default to latest.
+
+**Example with Version Specification**
+
+```html
+<script
+  type="module"
+  src="https://cdn.skypack.dev/album-viewer@v^1.0.0"
+></script>
+```
+
+Replace `^1.0.0` with the desired version number to use a specific version of the component.
 
 ## Usage
 
