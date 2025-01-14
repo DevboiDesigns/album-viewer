@@ -42,17 +42,75 @@ Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a pro
 
 ## Properties
 
-- `artistName`: artist to fetch albums for
+- `name`: artist to fetch albums for
+- `iframeWidth`: The width of the iframes displaying the albums. Default is `350px`.
+- `iframeHeight`: The height of the iframes displaying the albums. Default is `442px`.
+- `iframeBorder`: The border style of the iframes displaying the albums. Default is `0`.
 
 **Example with Name**
 
 ```html
-<album-viewer name="artistName"></album-viewer>
+<album-viewer
+  name="onhell"
+  iframe-width="400px"
+  iframe-height="500px"
+  iframe-border="1px solid black"
+></album-viewer>
 ```
 
 ## Styling
 
 The component includes default styles for the horizontal scrolling view. You can customize the styles by targeting the `album-viewer` component and its internal elements.
+
+### Default Styles
+
+```css
+album-viewer .album-viewer {
+  display: flex;
+  justify-content: top;
+  overflow-x: auto;
+}
+```
+
+### Customizing Styles
+
+You can override the default styles by adding custom CSS to your project. For example, to change the background color and add padding:
+
+```css
+album-viewer .album-viewer {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+```
+
+### Example with Custom Styles
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Viewer</title>
+    <style>
+      album-viewer .album-viewer {
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <album-viewer
+      name="onhell"
+      iframe-width="400px"
+      iframe-height="500px"
+      iframe-border="1px solid black"
+    ></album-viewer>
+
+    <script type="module" src="./src/album-viewer.js"></script>
+  </body>
+</html>
+```
 
 ## Conclusion
 
