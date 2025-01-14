@@ -9,9 +9,9 @@ export class AlbumViewer extends LitElement {
    * @property url - The name of the artist to fetch the albums for
    */
   @property({ type: String }) name = ""
-  // @property({ type: String }) iframeWidth = "350px"
-  // @property({ type: String }) iframeHeight = "442px"
-  // @property({ type: String }) iframeBorder = "0"
+  @property({ type: String }) iframeWidth = "350px"
+  @property({ type: String }) iframeHeight = "442px"
+  @property({ type: String }) iframeBorder = "0"
 
   firstUpdated() {
     this.fetchAlbumData()
@@ -41,12 +41,9 @@ export class AlbumViewer extends LitElement {
     albums.forEach((album) => {
       const type = album.type
       const iframe = document.createElement("iframe")
-      // iframe.style.border = this.iframeBorder
-      // iframe.style.width = this.iframeWidth
-      // iframe.style.height = this.iframeHeight
-      iframe.style.border = "0"
-      iframe.style.width = "350px"
-      iframe.style.height = "442px"
+      iframe.style.border = this.iframeBorder
+      iframe.style.width = this.iframeWidth
+      iframe.style.height = this.iframeHeight
       iframe.src = BANDCAMP_URL(type, album.id)
       // iframe.seamless = true
       container?.appendChild(iframe)
