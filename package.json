@@ -59,5 +59,8 @@
     "album viewer webcomponent",
     "album-viewer-webcomponent",
     "album viewer webcomponents"
-  ]
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
 }
