@@ -37,7 +37,13 @@ Replace `^1.0.0` with the desired version number to use a specific version of th
 
 ## Usage
 
-Add the `album-viewer` component to your HTML and pass the Bandcamp URL as a property:
+Add the `album-viewer` component to your HTML and pass the Bandcamp artist name as a property:
+
+```html
+ <album-viewer name="artistName"></album-viewer>
+```
+
+Example:
 
 ```html
 <!DOCTYPE html>
