@@ -1,6 +1,6 @@
 import { LitElement, css, html } from "lit"
 import { customElement, property } from "lit/decorators.js"
-import { BASE_URL } from "./utils/base.url"
+import { API_URL } from "./utils/base.url"
 import { BANDCAMP_URL } from "./utils/bandcamp.url"
 
 @customElement("album-viewer")
@@ -18,7 +18,7 @@ export class AlbumViewer extends LitElement {
   }
 
   async fetchAlbumData() {
-    const requestUrl = `${BASE_URL()}?name=${this.name}`
+    const requestUrl = `${API_URL}/album-viewer/?name=${this.name}`
     try {
       const response = await fetch(requestUrl, {
         method: "GET",
