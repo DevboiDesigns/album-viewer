@@ -14,14 +14,11 @@ export class AlbumViewer extends LitElement {
   @property({ type: String }) iframeBorder = "0"
 
   firstUpdated() {
-    console.warn(
-      "This package is deprecated. Please use the new package https://www.npmjs.com/package/album-viewer"
-    )
     this.fetchAlbumData()
   }
 
   async fetchAlbumData() {
-    const requestUrl = `${API_URL}?name=${this.name}`
+    const requestUrl = `${API_URL}/album-viewer/?name=${this.name}`
     try {
       const response = await fetch(requestUrl, {
         method: "GET",
