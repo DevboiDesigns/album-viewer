@@ -14,6 +14,9 @@ export class AlbumViewer extends LitElement {
   @property({ type: String }) iframeBorder = "0"
 
   firstUpdated() {
+    console.warn(
+      "This package is deprecated. Please use the new package https://www.npmjs.com/package/album-viewer"
+    )
     this.fetchAlbumData()
   }
 
