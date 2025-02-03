@@ -2,7 +2,7 @@
 
 The `album-viewer` web component fetches and displays albums from a specified [Bandcamp](https://bandcamp.com) artist
 
-![version](https://img.shields.io/badge/v2.0.1-RELEASE-8A2BE2)
+![version](https://img.shields.io/badge/v2.0.3-RELEASE-8A2BE2)
 
 ---
 
@@ -40,7 +40,7 @@ Replace `^1.0.0` with the desired version number to use a specific version of th
 Add the `album-viewer` component to your HTML and pass the Bandcamp artist name as a property:
 
 ```html
- <album-viewer name="artistName"></album-viewer>
+ <album-viewer name="artist name"></album-viewer>
 ```
 
 Example:
