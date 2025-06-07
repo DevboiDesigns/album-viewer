@@ -1,7 +1,7 @@
 {
   "name": "album-viewer",
   "private": false,
-  "version": "2.0.3",
+  "version": "2.1.3",
   "type": "module",
   "files": [
     "dist",
