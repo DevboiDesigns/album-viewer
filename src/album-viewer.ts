@@ -18,7 +18,7 @@ export class AlbumViewer extends LitElement {
   }
 
   async fetchAlbumData() {
-    const requestUrl = `${API_URL}/album-viewer/?name=${this.name}`
+    const requestUrl = `${API_URL}/?name=${this.name}`
     try {
       const response = await fetch(requestUrl, {
         method: "GET",
